@@ -12,6 +12,7 @@
         width: 100%;
         height: 100%;
         padding: 0 20px !important;
+
         @include sm {
             display: flex;
             flex-direction: column;
@@ -54,16 +55,19 @@
                 width: 150px !important;
             }
         }
+
         .services__category {
             color: white;
             font-size: 42px;
             font-weight: 380;
             margin: 80px 0;
             color: #499EAA;
+
             @include breakpoint (400px) {
                 font-size: 32px !important;
             }
         }
+
         .row {
             .col {
                 padding: 0 !important;
@@ -72,15 +76,17 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
                 iframe {
                     display: none;
                 }
+
                 @include sm {
                     padding: 10px !important;
                 }
 
                 .video__title {
-                    color: #fff;
+                    color: rgba(255, 255, 255, 0);
                     font-size: 40px;
                     letter-spacing: 5px;
                     font-weight: 395;
@@ -92,9 +98,13 @@
                     z-index: 2;
                     text-align: center;
                     transition: all .3s ease-in-out;
-                    @include lg {
-                        font-size: 28px; 
+                    @include sm {
+                        color: #fff;
                     }
+                    @include lg {
+                        font-size: 28px;
+                    }
+
                     @include breakpoint (400px) {
                         font-size: 18px !important;
                     }
@@ -106,11 +116,17 @@
                     left: 0;
                     width: 100%;
                     height: 100%;
-                    background-color: rgba(0, 0, 0, .3);
+                    background-color: rgba(0, 0, 0, 0);
+                    @include sm {
+                        background-color: rgba(0, 0, 0, .3);
+
+                    }
+
                     z-index: 1;
                     transition: all .3s ease-in-out;
                 }
             }
+
             .col:hover {
                 .video__title {
                     color: #fff;

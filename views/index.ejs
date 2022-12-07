@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="../public/scss/index.css">
     <title>Shekty Films</title>
 </head>
@@ -39,17 +40,25 @@
         <div class="content">
             <div class="hero__section">
                 <div class="hero__container">
+                    <div class="hero__popup__container">
+                        <img class="close__popup" src="../public/assets/Cross.png" alt="cross">
+                        <iframe class="hero__popup" src="https://www.youtube.com/embed/zuu9sGunMm8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                     <div data-aos-duration="1000" data-aos="fade-down" class="hero__content">
                         <div class="hero__title">Видеопроизводство и кинопроизводство полного цикла и любого масштаба
                         </div>
                         <div class="hero__buttons">
                             <a class="button" href="/about">Подробнее</a>
-                            <a class="button" href="https://www.youtube.com/watch?v=zuu9sGunMm8">Showreel</a>
+                            <button class="button showreel__button">Showreel</и>
                         </div>
                     </div>
                 </div>
                 <video class="hero__video" src="../public/assets/showreel.mp4" muted autoplay loop></video>
-                <video class="hero__video second__showreel" src="../public/assets/showreel__mobile.mp4" muted autoplay loop></video>
+                <video class="hero__video second__showreel" src="../public/assets/showreel__mobile.mp4" muted autoplay
+                    loop></video>
                 <div class="overlay"></div>
             </div>
             <div class="posters__section">
@@ -82,11 +91,11 @@
                                     allowfullscreen></iframe>
                             </div>
                             <div data-aos-duration="1000" data-aos="fade-left" id="second-col" class="col">
-                                <img src="../public/assets/BMW.png" alt="bmw" class="img-fluid">
-                                <h1 class="video__title">bmw</h1>
+                                <img src="../public/assets/Nike.jpg" alt="nike" class="img-fluid">
+                                <h1 class="video__title">nike</h1>
                                 <div class="overlay"></div>
                                 <iframe loading="lazy" id="second-video" class="video"
-                                    src="https://www.youtube.com/embed/uSNcOzjDHCg" title="YouTube video player"
+                                    src="https://www.youtube.com/embed/gB32ig0VbI8" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
@@ -94,21 +103,21 @@
                         </div>
                         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
                             <div data-aos-duration="1000" data-aos="fade-right" id="third-col" class="col">
-                                <img src="../public/assets/Dsquared2.jpg" alt="dsquared" class="img-fluid">
-                                <h1 class="video__title">dsquared</h1>
+                                <img src="../public/assets/BMW.png" alt="dsquared" class="img-fluid">
+                                <h1 class="video__title">bmw</h1>
                                 <div class="overlay"></div>
                                 <iframe loading="lazy" id="third-video" class="video"
-                                    src="https://www.youtube.com/embed/qMVv49moj7w" title="YouTube video player"
+                                    src="https://www.youtube.com/embed/uSNcOzjDHCg" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                             </div>
                             <div data-aos-duration="1000" data-aos="fade-left" id="fourth-col" class="col">
-                                <img src="../public/assets/CFT.jpg" alt="cft" class="img-fluid">
-                                <h1 class="video__title">cft</h1>
+                                <img src="../public/assets/Polaroid.jpg" alt="cft" class="img-fluid">
+                                <h1 class="video__title">polaroid</h1>
                                 <div class="overlay"></div>
                                 <iframe loading="lazy" id="fourth-video" class="video"
-                                    src="https://www.youtube.com/embed/2hC9ZDjLyCg" title="YouTube video player"
+                                    src="https://www.youtube.com/embed/CmvuNlQOT-8" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>

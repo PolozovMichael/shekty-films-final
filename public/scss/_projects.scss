@@ -89,6 +89,8 @@
             padding: 0 !important;
             margin: 0 !important;
             .row {
+                display: flex !important;
+                align-items: center;
                 .col {
                     padding: 0 !important;
                     position: relative;
